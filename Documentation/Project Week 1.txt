@@ -1,0 +1,10 @@
+Week 1:
+
+Exploratory Data Analysis (EDA): Review raw data provided, and decide on specific analysis targets and questions for Dashboard and Machine Learning Model.
+# Place discussion summary here
+
+Data Architecture: Decide on how and where data is stored, accessability and how data is written to and read from the Database.
+# Place discussion summary here
+
+SCRUM/AGILE: Decide on how project will be divided for the week and deliverables that are responsible by each collaborator.
+# Place discussion summary here

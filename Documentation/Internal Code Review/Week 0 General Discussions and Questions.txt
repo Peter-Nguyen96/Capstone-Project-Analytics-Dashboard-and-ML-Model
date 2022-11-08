@@ -1,0 +1,10 @@
+Points to clarify on the call tomorrow:
+NDAs? OK to publish on GitHub?
+Software licenses and other resources provided (Tableau, AWS)
+Dashboard on JS/CSS or Tableau? They like Tableau but we need to remind them that Tableau requires a license to keep data private
+Need clear definitions "in plain English" of column titles in the ad table
+Need content-specific data, ideally with content ID granularity but at least by content genre/keywords
+Need viewer-specific data to determine viewer profile, clusters, tastes
+Ideally need ad-specific data to determine most-popular/better-paying advertiser brands/categories
+The dataset is only for one week of viewership - is that enough to determine trends or do we want 3 months worth? (but that will require a lot of cleaning on their part, and they ight not have time to do it so potential project delay for us)
+Tech setup: ok with csv files by email for now, but if the volume gets much bigger how do we do it?
