@@ -19,6 +19,6 @@ Final Project for UofT Data Analytics Bootcamp
 - Countries mapping
 
 ## Methodology / Steps / Decisions made while cleaning
-Merge all 550 files into one
-Anonymize the data pertaining to channel and operator names
+- Merge all 550 files into one
+- Anonymize the data pertaining to channel and operator names
 
