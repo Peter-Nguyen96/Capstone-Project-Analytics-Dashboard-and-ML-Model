@@ -9,3 +9,6 @@ Final Project for UofT Data Analytics Bootcamp
 
 ## Client's Objectives
 
+
+## Methodology / Decisions made while cleaning
+
