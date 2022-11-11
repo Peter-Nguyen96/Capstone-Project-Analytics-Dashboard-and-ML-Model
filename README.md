@@ -1,6 +1,16 @@
 # Qwest-Analytics-Dashboard-and-ML-Model
 Final Project for UofT Data Analytics Bootcamp
 
+What we need for Week 1
+- Selected topic
+- Reason they selected the topic
+- Description of the source of data
+- Questions they hope to answer with the data
+- Description of the communication protocols
+- Present a provisional machine learning model that stands in for the final machine learning model, takes in data from the provisional database and outputs label for input data
+- Present a provisional database that stands in for the final database with sample data that mimics the expected final database structure and is connected to the draft machine learning model
+
+
 ## Industry
 
 
