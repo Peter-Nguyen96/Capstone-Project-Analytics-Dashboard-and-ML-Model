@@ -26,6 +26,8 @@ Our study will focus on viewership, programming and advertising revenue data for
 - make content recommendation based on internal content tags.
 
 ## Data
+
+The client has made the following available to us:
 - 550 CSV files containing viewership data for 3 channels across 14 operators in 67 countries from 18Feb21 to 6Nov22
 - 1 CSV file containing advertising revenue for their 3 channels across 19 main territories from 28Feb22 to 25Oct22
 - Programming details, IDs, genres, tags
