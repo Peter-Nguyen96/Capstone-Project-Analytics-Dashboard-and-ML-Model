@@ -15,14 +15,17 @@ What we need for Week 1
 
 According to PwC's latest Global Entertainment & Media Outlook 2022, the streaming video industry was valued at $79.1 billion in revenues worldwide and will continue to grow at a pace of 7-10% annually for the next few years. The big driver of opportunity will be a major shift by all major players in the subscription video space (Netflix, Amazon Prime Video, Disney+, Paramount+, Peacock) to hybrid streaming models that combine lower-priced, ad-supported tiers with more premium, ad-free tiers.
 
-Across the streaming video industry, content providers and distributors are moving into big data to analyze subscriber funnels and viewership patterns to optimize content production/acquisition costs, improve content recommendation to their users and ultimately drive subscriber and advertising revenue.
+Across the streaming video industry, content providers and distributors are moving into big data to analyze subscriber funnels and viewership patterns to optimize content production/acquisition costs, help with programming decisions, improve content recommendation to their users and ultimately drive subscriber and advertising revenue.
 
-## Company / Client
+## Our Client
 
+Our real-world client is an online distributor of online video based in Western Europe and specialized in music content, mostly full-length concerts and documentaries. They offer 3 advertising-backed, linear channels (free/no subscription), a premium subscription service and a large library of titles available for sale to other conventional channels.
 
+The data has been anonymized to preserve the confidentiality of the client.
 
-## Client's Objectives
+## Client's and Project's Objectives
 
+Our study will focus on viewership data pertaining to the 3 linear channels
 
 ## Data
 - 550 CSV files containing viewership data for 3 channels across 14 operators in 67 countries from 18Feb21 to 6Nov22
