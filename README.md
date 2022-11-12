@@ -11,10 +11,14 @@ What we need for Week 1
 - Present a provisional database that stands in for the final database with sample data that mimics the expected final database structure and is connected to the draft machine learning model
 
 
-## Industry
+## Selected Topic: the Streaming Video Industry
 
+According to PwC's latest Global Entertainment & Media Outlook 2022, the streaming video industry was valued at $79.1 billion in revenues worldwide and will continue to grow at a pace of 7-10% annually for the next few years. The big driver of opportunity will be a major shift by all major players in the subscription video space (Netflix, Amazon Prime Video, Disney+, Paramount+, Peacock) to hybrid streaming models that combine lower-priced, ad-supported tiers with more premium, ad-free tiers.
+
+Across the streaming video industry, content providers and distributors are moving into big data to analyze subscriber funnels and viewership patterns to optimize content production/acquisition costs, improve content recommendation to their users and ultimately drive subscriber and advertising revenue.
 
 ## Company / Client
+
 
 
 ## Client's Objectives
