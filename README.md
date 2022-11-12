@@ -1,16 +1,6 @@
 # Qwest-Analytics-Dashboard-and-ML-Model
 Final Project for UofT Data Analytics Bootcamp
 
-What we need for Week 1
-- Selected topic
-- Reason they selected the topic
-- Description of the source of data
-- Questions they hope to answer with the data
-- Description of the communication protocols
-- Present a provisional machine learning model that stands in for the final machine learning model, takes in data from the provisional database and outputs label for input data
-- Present a provisional database that stands in for the final database with sample data that mimics the expected final database structure and is connected to the draft machine learning model
-
-
 ## Selected Topic: the Streaming Video Industry
 
 According to PwC's latest Global Entertainment & Media Outlook 2022, the streaming video industry was valued at $79.1 billion in revenues worldwide in 2021 and will continue to grow at a pace of 7-10% annually for the next few years. The big driver of opportunity is a major shift by all major players in the subscription video space (Netflix, Amazon Prime Video, Disney+, Paramount+, Peacock) to hybrid streaming models that combine lower-priced, ad-supported tiers with more premium, ad-free tiers.
@@ -30,7 +20,10 @@ Each of the 3 channels (and each piece of content on the channels) are embedded 
 As the Client rolls out their services across an increasing number of platforms around the world and the number of viewers increases as well, the amount of data collected daily skyrockets exponentially. At this stage in their development (3 years after commercial launch), the Client collects on average 120,000 lines of viewership data per day and up to twice as much advertising data depending on granularity. The Client is no longer able to cope with traditional Excel and PowerBI tools, and is now looking to hire one or more data analysts to take the company to the next level.
 
 Our study will focus on viewership, programming and advertising revenue data for the 3 linear channels to help answer the following:
-- identify viewership trends and viewer profilewhich channels and pieces of content are more popular
+- identify viewership patterns by channel, content, country, platform... ;
+- identify revenue trends and determine which channel/content/genre brings in more revenue, by country or region ;
+- make revenue projections into the next 2 fiscal quarters ;
+- make content recommendation based on internal content tags.
 
 ## Data
 - 550 CSV files containing viewership data for 3 channels across 14 operators in 67 countries from 18Feb21 to 6Nov22
@@ -42,13 +35,29 @@ Our study will focus on viewership, programming and advertising revenue data for
 
 The data has been anonymized to preserve the confidentiality of the client.
 
-## Communication Protocols
+## Communication Protocols (to be updated as we go)
 
+- daily posts in the group Slack channel to assign tasks and keep track of progress
+- video calls/huddles 2-3 times /week to solve blocking points together, review everyone's work and push to main branch
 
-## Software
+## Software & Resources (to be updated as we go)
 
+python version ...
+PostgreSQL version ...
 
-## Methodology / Steps / Decisions made while cleaning
+## Methodology / Steps / Decisions made while cleaning (to be updated as we go)
+
 - Merge all 550 viewership files into one
 - Anonymize the data pertaining to channel and operator names
+- in viewership data, in column A "channel", we kept the last string "XXX-XXX-XXX-huawei" as the operator name (conflicts and inconsistencies in the name format)
+- 
 
+## Provisional Database
+
+Based on the data that we received and our initial EDA, we poject the database will look like the following:
+<img src="Resources/ERD.png" height=200>
+
+## Provisional Machine Learning Model
+
+Revenue projections will be made following multiple regression anlyses based on the revenue table down to date and country level.
+Content recommendations will follow a more advanced machine learning model (tbd)
