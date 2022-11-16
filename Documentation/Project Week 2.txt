@@ -1,0 +1,16 @@
+Tasks Done:
+-Data Cleaning
+-Set up AWS/PostGreSQL Database
+-ERD Table
+-Updated ReadMe
+- Github Done
+
+Tasks To Complete:
+-Upload cleaned data to Database
+-Perform EDA
+-Start Machine Learning Model
+	- Given Operator - Predict Revenue Per Operator
+	- Given Views + Revenu - Predict Program? (Max Revenue or Max Revenue/Views? Perform statistical analysis EDA)
+- Update ReadMe
+- Build Presentation Slide Deck
+- Approval for Github to go Public?
