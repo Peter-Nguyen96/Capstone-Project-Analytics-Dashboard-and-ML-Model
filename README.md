@@ -60,7 +60,7 @@ PostgreSQL version ...
 - Merge all 550 viewership files into one
 - Anonymize the data pertaining to channel and operator names
 - in viewership data, in column A "channel", we kept the last string "XXX-XXX-XXX-huawei" as the operator name (conflicts and inconsistencies in the name format)
-- 
+- in advertising data "no viewership data" becomes "others"
 
 ## Provisional Database
 
