@@ -1,0 +1,71 @@
+Resources additionally available for cudf
+https://resources.nvidia.com/en-us-ds-cheat-sheets/ds-cheat-sheet-ml-python
+
+Other Resources:
+https://medium.com/@sharifuli/running-spark-on-local-machine-c38957d022f4
+https://towardsdatascience.com/clustering-metrics-better-than-the-elbow-method-6926e1f723a6
+https://www.databricks.com/wp-content/uploads/2021/10/Big-Book-of-Data-Engineering-Final.pdf
+
+The easiest option is simply to use tensorflow-gpu
+
+--------------------------------------------------------------------------------
+HOW TO START WITH TENSORFLOW-GPU QUICKSTART:
+
+Requirements: Nvidia GPU, AMD/Intel solutions not available, but see OpenCL compute.
+
+1) Download pre-requisite packages:
+Nvidia Drivers: https://www.nvidia.com/download/index.aspx
+Nvidia Cuda SDK: https://developer.nvidia.com/cuda-downloads
+Nvidia cuDNN: https://developer.nvidia.com/cudnn
+
+Anaconda 3: https://www.anaconda.com/products/distribution
+Python 3.7/3.9: https://www.python.org/
+VSCode: https://code.visualstudio.com/
+
+2) Create a new environment in anaconda using anaconda prompt.
+Run the following commands:
+
+conda deactivate
+conda update conda
+conda create -n ML_GPU python=3.9 anaconda
+
+conda activate ML_GPU
+conda install -c conda-forge imbalanced-learn
+pip install environment-kernels
+pip install tensorflow-gpu
+conda install -c plotly plotly
+conda install -c pyviz hvplot
+
+#Install any other python libraries that may be needed like sklearn, scipy, numpy ect.
+
+3) add to jupyter notebook
+Run commands on environment CLI
+python -m ipykernel install --user --name ML_GPU
+
+
+Check if GPU is detected in code:
+
+import tensorflow as tf
+print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
+print("TensorFlow version: ", tf.__version__)
+device_name = tf.test.gpu_device_name()
+if not device_name:
+  raise SystemError('GPU device not found')
+print('Found GPU at: {}'.format(device_name))
+
+
+Output should be:
+
+Num GPUs Available:  1
+TensorFlow version:  2.10.0
+Found GPU at: /device:GPU:0
+
+
+
+When training machine learning models if GPU is slower than CPU, increase batch size.
+
+Examples:
+
+# Train the model
+fit_model = nn.fit(X_train_scaled,y_train,epochs=100,callbacks=[cp_callback], batch_size=4096)
+
