@@ -2,6 +2,11 @@
 
 library(dplyr)
 
+install.packages("caTools") 
+library(caTools)
+install.packages('car')
+library(car)
+
 # import csv and read as a table
 
 ViewershipData <- read.csv(file='//Users/jordanbowman/Desktop/Final Project Bootcamp/ViewershipData.csv',check.names=F,stringsAsFactors = F)
@@ -66,3 +71,14 @@ summary(model)$coef
 
 model <- lm(total_viewership_seconds ~ region + device_type + session_count + unique_viewers, data = regions)
 summary(model)$coef
+
+# R squared for model
+
+str(summary(model))
+
+# Checks for colinearity 
+
+vif(model)
+vif_values <- vif(model)
+
+barplot(vif_values, main = "VIF Values", horiz = TRUE, col = "steelblue")
