@@ -85,6 +85,7 @@ Viewership Data:
 ## Database
 
 Based on the data that we received and our initial EDA, we poject the database will look like the following after data cleaning:
+
 <img src="Initial EDA/Images and Screenshots/ERD v2.png" height=200>
 
 - Data Storage and Handling was done via Amazon AWS RDS and S3
