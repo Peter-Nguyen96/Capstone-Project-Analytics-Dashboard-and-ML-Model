@@ -52,23 +52,48 @@ The data has been anonymized to preserve the confidentiality of the client.
 
 ## Software & Resources (to be updated as we go)
 
-python version ...
-PostgreSQL version ...
+Python:
+- Data Cleanup: Python 3.7.13, 3.9.13
+- Exploratory Data Analysis: Python 3.7.13, 3.9.13, Microsoft Excel
+	- Libraries Used: PANDAS, Matplotlib
+- Machine Learning: Python 3.9.13
+	- Libraries Used: ... 
+- Data Storage: Amazon AWS: S3, RDS
+	- PostgreSQL: pgAdmin4 6.8 
 
 ## Methodology / Steps / Decisions made while cleaning (to be updated as we go)
 
+Minute Level Aggregation Table:
 - Merge all 550 viewership files into one
-- Anonymize the data pertaining to channel and operator names
+- Anonymize the data pertaining to channel and operator names using anonymization key table. (CONFIDENTIAL DATA, NOT AVAILABLE TO PUBLIC)
+	- Applied a function to each row to find string in list of anonymization key table for both channel and operator under unanonymized and now removed 'channel' column
+	- Code should be refactored in future revisions or before deployment to improve speed. Currently takes 500 minutes to run for loop for each function.
+- Anonymized 'content_id' column containing exact name of media content provided using Media Library key from data provider for programs and generated an anonymization key table for playlists. (CONFIDENTIAL DATA, NOT AVAILABLE TO PUBLIC)
+	- Applied regex filters to obtain program or playlist numbers and created new columns containing anonymization key
+	- Merged columns with .fillna
+- Used Anonymized 'content_id' to match with genre data from data provider.
+	- Merged columns on anonymized 'content_id' and removed extra columns.
+	- Method was applied to 52 million rows with about 3000 rows of anonymized data keys.  Method of using PANDAS .merge (similar to SQL or Excel VLOOKUP) is faster by about 250x
+- Final DataFrame was exported as .csv for development purposes, but should be uploaded to PostgreSQL database.
+
+Advertising Data:
 - in viewership data, in column A "channel", we kept the last string "XXX-XXX-XXX-huawei" as the operator name (conflicts and inconsistencies in the name format)
+
+Viewership Data:
 - in advertising data "no viewership data" becomes "others"
 
-## Provisional Database
+## Database
 
-Based on the data that we received and our initial EDA, we poject the database will look like the following:
-<img src="Resources/ERD.png" height=200>
+Based on the data that we received and our initial EDA, we poject the database will look like the following after data cleaning:
+
+<img src="Initial EDA/Images and Screenshots/ERD v2.png" height=200>
+
+- Data Storage and Handling was done via Amazon AWS RDS and S3
+- Data Storage Service was connected to PostgreSQL database accessed using pgAdmin4
+- Cleaned data was uploaded to database using local installation of PySpark
 
 ## Provisional Machine Learning Model
 
-Revenue projections will be made following multiple regression anlyses based on the revenue table down to date and country level.
+Revenue projections will be made following multiple regression analyses based on the revenue table down to date and country level.
 Content recommendations will follow a more advanced machine learning model (tbd)
 
