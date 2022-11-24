@@ -50,7 +50,7 @@ The data has been anonymized to preserve the confidentiality of the client.
 - Other Communications: Other communications such as communications with the data provider or with instructors will be conducted through whichever communication platform requested by the other party. Here other party is defined as anyone who is not a repository collaborator.
 
 
-## Software & Resources (to be updated as we go)
+## Software & Resources
 
 Python:
 - Data Cleanup: Python 3.7.13, 3.9.13
