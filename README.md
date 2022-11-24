@@ -85,7 +85,6 @@ Advertising Data (42,045 rows):
 - convert country codes to country names, and add a "region" column
 - create new columns for CPM and pod drop rates
 - replace "no viewership data" values in "channel" and "operator" columns with "unknown" (7,217 rows)
-- in viewership data, in column A "channel", we kept the last string "XXX-XXX-XXX-huawei" as the operator name (conflicts and inconsistencies in the name format)
 
 
 ## Database
