@@ -9,6 +9,6 @@ The blueprint outline for the dashboard was completing using Google Slides.  It 
 
 The dashboard blueprint can also be accessed in pdf format from the link below:
 
-[Dashboard Blueprint PDF](https://github.com/Peter-Nguyen96/Qwest-Analytics-Dashboard-and-ML-Model/blob/6da17b86fb7769c430887c9056e0cceacdfc8a3c/Dashboard_Blueprint_v2.pdf)
+[Dashboard Blueprint PDF](https://github.com/Peter-Nguyen96/Capstone-Project-Analytics-Dashboard-and-ML-Model/blob/15da8979a4e7a8f72a410314affdf8c556adeab2/Dashboard_Blueprint_v3.pdf)
 
 
