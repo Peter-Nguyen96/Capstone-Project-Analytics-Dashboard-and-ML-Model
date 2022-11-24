@@ -1,11 +1,13 @@
 # Qwest-Analytics-Dashboard-and-ML-Model
 Final Project for UofT Data Analytics Bootcamp
 
+
 ## Selected Topic: the Streaming Video Industry
 
 According to PwC's latest Global Entertainment & Media Outlook 2022, the streaming video industry was valued at $79.1 billion in revenues worldwide in 2021 and will continue to grow at a pace of 7-10% annually for the next few years. The big driver of opportunity is a major shift by all major players in the subscription video space (Netflix, Amazon Prime Video, Disney+, Paramount+, Peacock) to hybrid streaming models that combine lower-priced, ad-supported tiers with more premium, ad-free tiers.
 
 Across the streaming video industry, content providers and distributors are moving into big data to analyze subscriber funnels and viewership patterns to optimize content production/acquisition costs, help with programming decisions, improve content recommendation to their users and ultimately drive subscriber and advertising revenue.
+
 
 ## Our Client
 
@@ -14,6 +16,7 @@ Our real-world client is an online distributor of online video based in Western 
 Their channels are available worldwide and designed primarily for free, ad-funded platforms such as PlutoTV, Roku, YoutubeTV, Plex, Samsung TV Plus, LG Channels and other OEM services. Their premium SVOD service is available primarily through traditional pay-tv distributors and on a direct-to-consumer basis.
 
 Each of the 3 channels (and each piece of content on the channels) are embedded with unique identifiers and markers 24/7 to automate and maximize advertising sales: position and duration of the ad breaks available, viewer profile, location by country, device, viewership history etc. All those parameters are used to customize the experience and offer as much audience targeting as possible to advertisers (who are then willing to spend more to reach a more targeted audience).
+
 
 ## Client's and Project's Objectives
 
@@ -24,6 +27,7 @@ Our study will focus on viewership, programming and advertising revenue data for
 - identify revenue trends and determine which channel/content/genre brings in more revenue, by country or region ;
 - make revenue projections into the next 2 fiscal quarters ;
 - make content recommendation based on internal content tags.
+
 
 ## Data
 
@@ -37,10 +41,6 @@ The client has made the following available to us:
 
 The data has been anonymized to preserve the confidentiality of the client.
 
-## Communication Protocols (to be updated as we go)
-
-- daily posts in the group Slack channel to assign tasks and keep track of progress
-- video calls/huddles 2-3 times /week to solve blocking points together, review everyone's work and push to main branch
 
 ## Communication Protocols:
 
@@ -55,11 +55,12 @@ The data has been anonymized to preserve the confidentiality of the client.
 Python:
 - Data Cleanup: Python 3.7.13, 3.9.13
 - Exploratory Data Analysis: Python 3.7.13, 3.9.13, Microsoft Excel
-	- Libraries Used: PANDAS, Matplotlib
+	- Libraries Used: PANDAS, Matplotlib, numpy, sqlalchemy
 - Machine Learning: Python 3.9.13
 	- Libraries Used: ... 
 - Data Storage: Amazon AWS: S3, RDS
 	- PostgreSQL: pgAdmin4 6.8 
+
 
 ## Methodology / Steps / Decisions made while cleaning (to be updated as we go)
 
@@ -76,11 +77,16 @@ Minute Level Aggregation Table:
 	- Method was applied to 52 million rows with about 3000 rows of anonymized data keys.  Method of using PANDAS .merge (similar to SQL or Excel VLOOKUP) is faster by about 250x
 - Final DataFrame was exported as .csv for development purposes, but should be uploaded to PostgreSQL database.
 
-Advertising Data:
+Advertising Data (42,045 rows):
+- drop columns as indicated by the client: "'bid_timeouts_rate", "render_rate", "fillrate", "avg_winning_bid (‚Ç¨)" and "avg_imp_ecpm (‚Ç¨)"
+- convert date column from 'object' to 'date' with to_datetime
+- drop rows that contain either all null values OR an "endpoint_request" value and all null values otherwise (853 rows)
+- drop rows without a "country" value (12 rows)
+- convert country codes to country names, and add a "region" column
+- create new columns for CPM and pod drop rates
+- replace "no viewership data" values in "channel" and "operator" columns with "unknown" (7,217 rows)
 - in viewership data, in column A "channel", we kept the last string "XXX-XXX-XXX-huawei" as the operator name (conflicts and inconsistencies in the name format)
 
-Viewership Data:
-- in advertising data "no viewership data" becomes "others"
 
 ## Database
 
