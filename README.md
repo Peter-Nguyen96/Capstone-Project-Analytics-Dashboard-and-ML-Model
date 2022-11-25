@@ -50,7 +50,7 @@ The data has been anonymized to preserve the confidentiality of the client.
 - Other Communications: Other communications such as communications with the data provider or with instructors will be conducted through whichever communication platform requested by the other party. Here other party is defined as anyone who is not a repository collaborator.
 
 
-## Software & Resources (to be updated as we go)
+## Software & Resources
 
 Python:
 - Data Cleanup: Python 3.7.13, 3.9.13
@@ -85,7 +85,6 @@ Advertising Data (42,045 rows):
 - convert country codes to country names, and add a "region" column
 - create new columns for CPM and pod drop rates
 - replace "no viewership data" values in "channel" and "operator" columns with "unknown" (7,217 rows)
-- in viewership data, in column A "channel", we kept the last string "XXX-XXX-XXX-huawei" as the operator name (conflicts and inconsistencies in the name format)
 
 
 ## Database
@@ -102,4 +101,8 @@ Based on the data that we received and our initial EDA, we poject the database w
 
 Revenue projections will be made following multiple regression analyses based on the revenue table down to date and country level.
 Content recommendations will follow a more advanced machine learning model (tbd)
+
+## TRIANGLE Update 
+- Dropped the faulty advertsing table due to improper data types.
+- Created a query to properly format the advertising data table, in order to load the csv file into it.
 
