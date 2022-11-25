@@ -87,6 +87,12 @@ Advertising Data (42,045 rows):
 - replace "no viewership data" values in "channel" and "operator" columns with "unknown" (7,217 rows)
 
 
+## Our Initial Analysis
+
+The results of our initial analysis are available on Google Slides here:
+https://docs.google.com/presentation/d/1ZYtJm8cpZripwMaD_qk0EF06C857dtl9DBsFkQhWB-g/edit?usp=sharing
+
+
 ## Database
 
 Based on the data that we received and our initial EDA, we poject the database will look like the following after data cleaning:
