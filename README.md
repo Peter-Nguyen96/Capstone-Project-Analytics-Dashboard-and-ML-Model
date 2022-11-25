@@ -113,7 +113,7 @@ Content recommendations will follow a more advanced machine learning model (tbd)
 
 The blueprint outline for the dashboard was completing using Google Slides.  It can be assessed via the following link:
 
-(https://docs.google.com/presentation/d/e/2PACX-1vRofIl3PT3YXPaovaF8rEX-PCgZCxjt9Zt3KBfHO7ltMDcQT0FBkzJcU7c9aA_-wMeRTi-FqwvJdDzF/pub?start=false&loop=false&delayms=3000&slide=id.g197f91e436d_0_133)
+(https://docs.google.com/presentation/d/e/2PACX-1vRofIl3PT3YXPaovaF8rEX-PCgZCxjt9Zt3KBfHO7ltMDcQT0FBkzJcU7c9aA_-wMeRTi-FqwvJdDzF/pub?start=false&loop=false&delayms=3000&slide=id.p)
 
 The dashboard blueprint can also be accessed in pdf format from the link below:
 
