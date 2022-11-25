@@ -102,3 +102,7 @@ Based on the data that we received and our initial EDA, we poject the database w
 Revenue projections will be made following multiple regression analyses based on the revenue table down to date and country level.
 Content recommendations will follow a more advanced machine learning model (tbd)
 
+## TRIANGLE Update 
+- Dropped the faulty advertsing table due to improper data types.
+- Created a query to properly format the advertising data table, in order to load the csv file into it.
+
