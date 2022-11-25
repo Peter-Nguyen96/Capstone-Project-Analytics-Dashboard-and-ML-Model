@@ -105,4 +105,3 @@ Content recommendations will follow a more advanced machine learning model (tbd)
 ## TRIANGLE Update 
 - Dropped the faulty advertsing table due to improper data types.
 - Created a query to properly format the advertising data table, in order to load the csv file into it.
-
