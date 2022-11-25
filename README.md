@@ -87,6 +87,12 @@ Advertising Data (42,045 rows):
 - replace "no viewership data" values in "channel" and "operator" columns with "unknown" (7,217 rows)
 
 
+## Our Initial Analysis
+
+The results of our initial analysis are available on Google Slides here:
+https://docs.google.com/presentation/d/1ZYtJm8cpZripwMaD_qk0EF06C857dtl9DBsFkQhWB-g/edit?usp=sharing
+
+
 ## Database
 
 Based on the data that we received and our initial EDA, we poject the database will look like the following after data cleaning:
@@ -108,3 +114,28 @@ Content recommendations will follow a more advanced machine learning model (tbd)
 
 ## TRIANGLE Update #2
 - Created a query to merge the advertising data with the merged viewership and mapping data.
+
+## Dashboard Blueprint
+
+The blueprint outline for the dashboard was completing using Google Slides.  It can be assessed via the following link:
+
+(https://docs.google.com/presentation/d/e/2PACX-1vRofIl3PT3YXPaovaF8rEX-PCgZCxjt9Zt3KBfHO7ltMDcQT0FBkzJcU7c9aA_-wMeRTi-FqwvJdDzF/pub?start=false&loop=false&delayms=3000&slide=id.p)
+
+The dashboard blueprint can also be accessed in pdf format from the link below:
+
+[Dashboard Blueprint PDF](https://github.com/Peter-Nguyen96/Capstone-Project-Analytics-Dashboard-and-ML-Model/blob/60ea90400cb2adca390fe1d4aa5950c5387db118/Dashboard_Blueprint/Dashboard_Blueprint_v4.pdf)
+
+# Machine Learning Update#1
+
+## Description of preliminary data Processing
+	
+	- The countries was first bucketed intor regions, as there were over 200 countries in the dataset. then we proceeded to Merge the Viewership data with the mapping keys table on feed name.
+	- The second Merge was between the merged Viewership data and the Advertising (Programmatic) data on (Date, Feed Name, Country, and Region) to match feed name and Operator for each row, then we dropped the Device Type Column.
+	- The count of total viewers was summed ( Session Count + Unique Viewers) .
+	
+##  Description of preliminary feature engineering and Explaination of Model Choice.
+
+	- Features selected were : Country, Operator, Channel, and Requested Pod Duration
+	- Predict is to be : Revenue.
+The model is to be based on a neural network. Peter OneHot Encoded the data, then proceeded with scaling. the function of Choice at the time is "relu" until it is decided it the best for our use case.
+The compile method is Mean Squared Error in a Non Linear Regression type of model.
