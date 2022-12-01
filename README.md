@@ -127,13 +127,13 @@ The dashboard blueprint can also be accessed in pdf format from the link below:
 
 # Machine Learning Update#1
 
-## Description of preliminary data Processing
+## Description of Preliminary Data Processing
 	
-	- The countries was first bucketed intor regions, as there were over 200 countries in the dataset. then we proceeded to Merge the Viewership data with the mapping keys table on feed name.
-	- The second Merge was between the merged Viewership data and the Advertising (Programmatic) data on (Date, Feed Name, Country, and Region) to match feed name and Operator for each row, then we dropped the Device Type Column.
-	- The count of total viewers was summed ( Session Count + Unique Viewers) .
+	- The countries was first bucketed into regions, as there were over 200 countries in the dataset. The Viwership data was then merged with the mapping keys table on feed name.
+	- The second Merge was between the merged Viewership data and the Advertising (Programmatic) data on (Date, Feed Name, Country, and Region) to match feed name and Operator for each row. The Device Type Column was then dropped.
+	- The count of total viewers was summed (Session Count + Unique Viewers).
 	
-##  Description of preliminary feature engineering and Explaination of Model Choice.
+##  Description of Preliminary Feature Engineering and Explaination of Model Choice.
 
 	- Features selected were : Country, Operator, Channel, and Requested Pod Duration
 	- Predict is to be : Revenue.
