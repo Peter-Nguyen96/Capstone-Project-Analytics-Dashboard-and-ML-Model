@@ -138,7 +138,8 @@ The blueprint outline for the dashboard was completing using Google Slides.  It 
 The dashboard blueprint can also be accessed in pdf format from the link below:
 
 [Dashboard Blueprint PDF](https://github.com/Peter-Nguyen96/Capstone-Project-Analytics-Dashboard-and-ML-Model/blob/60ea90400cb2adca390fe1d4aa5950c5387db118/Dashboard_Blueprint/Dashboard_Blueprint_v4.pdf)
-======================================================================================================================================================================
+
+
 # Machine Learning Update #1
 
 MLV1: A simple linear regression machine learning model using sklearns Linear Regression model.  Exploratory data analysis was conducted to look at the revenue over time where a discernable but poor linear pattern was observed.  An attempt at linear regression was made fitting the data from January 1st to October 25th of the 2022 calander year.  The data from the advertising table in the database was grouped by date creating a daily level aggregation, and used to train a linear regression model.  The model performed poorly, and was highly sensitive to extreme outliers and noise in the data.
