@@ -126,7 +126,7 @@ Content recommendations will follow a more advanced machine learning model (tbd)
 ## TRIANGLE Update #2
 - Created a query to merge the advertising data with the merged viewership and mapping data.
 
-## Triangle Update 3
+## Triangle Update #3
 - dropped corrupt data from the AWS RDS, created a new table with proper compatible data types for the final dashboard.
 
 ## Dashboard Blueprint
@@ -138,6 +138,7 @@ The blueprint outline for the dashboard was completing using Google Slides.  It 
 The dashboard blueprint can also be accessed in pdf format from the link below:
 
 [Dashboard Blueprint PDF](https://github.com/Peter-Nguyen96/Capstone-Project-Analytics-Dashboard-and-ML-Model/blob/60ea90400cb2adca390fe1d4aa5950c5387db118/Dashboard_Blueprint/Dashboard_Blueprint_v4.pdf)
+
 
 # Machine Learning Update #1
 
@@ -175,6 +176,6 @@ MLV4: This model is an evolution of MLV2 and MLV3 and attempts to simplify facto
 ## Data Preprocessing and EDA:
 The revenue table was imported from the database.  The data was grouped by date, and a dataframe was made containing the date, and sum revenue data for each date (aggregate of countries, channels, and operators). This created a daily aggregation, and this was plotted against a weekly mean resample in order to see if there was a greater trend when we smoothed out the data. Statsmodel.api tsa.seasonal_decompose was used to perform a Fourier Transform like operation to determine the functions that aggregate together to form the revenue curve (overall trend, seasonal or cyclic events, and residual variation). The data was also determined to be non-stationary based on a quick plot of the raw data against the rolling mean, as well as through using statsmodel.tsa.stattools adfuller.  The data was detrended to make it stationary with 90% confidence. The data was made stationary so that time series prediction would not be dependent on the time at which the series was observed. Finally a function was used to iterate through the data and seasonal period to determine the best parameters for the SARIMA model (parameters with the minimum AIC) which was (1,1,1)x(1,1,1,52)
 
-# Modelling:
+## Modelling:
 For this type of model, only the time in days (as an index) and the revenue was required as feature and prediction respectively. During training diagnostic figures were created including Standardized residual for 'r', estimated density, normal Q-Q, and a correlogram were made. The ML model was written to predict and plot the revenue for the remainder of the 2022 calander year as well as provide the predicted mean, lower bound, and upper bound for the revenue for the next 5 days after the last available data point. 
 
