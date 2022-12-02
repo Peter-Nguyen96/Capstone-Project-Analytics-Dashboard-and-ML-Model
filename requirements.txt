@@ -112,6 +112,7 @@ py4j==0.10.9.5
 pyarrow==10.0.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
+PyCountries==22.1.0
 pycountry==22.3.5
 pycountry-convert==0.7.2
 pycparser==2.21
@@ -194,4 +195,3 @@ wincertstore==0.2
 wrapt==1.14.1
 wsproto==1.2.0
 zipp==3.10.0
-PyCountries==22.1.0
