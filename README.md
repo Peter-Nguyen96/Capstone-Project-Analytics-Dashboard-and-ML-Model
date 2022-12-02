@@ -41,27 +41,34 @@ The client has made the following available to us:
 
 The data has been anonymized to preserve the confidentiality of the client.
 
-
-## Communication Protocols:
-
-- General Communcations: General communications and questions will be done through the Slack app in a group text channel. This will be where quick technical questions and general discussion will take place
-- Project Mapping and Deliverables: Primary communcation regarding big picture project mapping and segmentation of deliverables into stories to be completed from SCRUM or AGILE Project management discussions will occur in group calls via Slack app voice channel.  Summarization of notes from each session will be posted in .txt or .docx format in the Slack app group text channel. These files should be eventually uploaded into Documentation foler in main branch
-- Commits and Code Peer Review: All collaborators will be able to create pull requests or accept pull requests. All collaborators will be able to commit their own code, and peer review other code before merging with main branch. Main branch edits can be performed by anyone invited as a collaborator until the project is public. Repository cannot go public until final review by the data provider or anyone employed by the data provider. Code review comments can be sent through general communications protocol as .txt or .docx, but should eventually be uploaded into Documentation/Internal Code Review folder in main branch.  Polished code documentation and methodology will be uploaded to README.md.
-- Other Communications: Other communications such as communications with the data provider or with instructors will be conducted through whichever communication platform requested by the other party. Here other party is defined as anyone who is not a repository collaborator.
-
-
 ## Software & Resources
 
 Python:
 - Data Cleanup: Python 3.7.13, 3.9.13
+
 - Exploratory Data Analysis: Python 3.7.13, 3.9.13, Microsoft Excel
 	- Libraries Used: PANDAS, Matplotlib, numpy, sqlalchemy
-- Machine Learning: Python 3.9.13
+
+- Machine Learning: Python 3.9.13, Apache Spark 3.2.2, Hadoop 2.7, Java 8 or Higher, Nvidia CUDA 11.0 or higher, Nvidia Driver Version 452.39 or higher, CUDA SDK 11.8 support for compute capability 3.5 – 9.0 (Kepler (in part), Maxwell, Pascal, Volta, Turing, Ampere, Ada Lovelace, Hopper)
+
+	- THESE MODELS WERE BUILD USING A LOCAL INSTALLATION OF APACHE SPARK, PLEASE MAKE SURE YOU HAVE LOCAL SPARK OR MODIFY FOR USE IN GOOGLE COLLAB APPROPRIATELY
+
 	- Libraries Used: 
 		- MLV1: Python 3.9.13, PANDAS, PySpark, Matplotlib, Numpy, sklearn.linear_model Linear Regression
 		- MLV2: Python 3.9.13, PANDAS, PySpark, Matplotlib, Tensorflow_gpu, Keras, sklearn.model_selection train_test_split, sklearn.preprocessing StandardScaler and OneHotEncoder
 		- MLV3: Python 3.9.13, PANDAS, PySpark, Matplotlib, Tensorflow_gpu, Keras, sklearn.model_selection train_test_split, sklearn.preprocessing StandardScaler and OneHotEncoder
 		- MLV4: Python 3.9.13, PANDAS, PySpark, Matplotlib, statsmodels.tsa.statstools adfuller, statsmodels.api, itertools
+	
+	- Additional Requirements for Apache Spark (.conf)
+		- spark.driver.memory           	32g
+		- spark.rapids.sql.enabled          true
+		- spark.driver.maxResultSize		0
+
+	- Additional Requirements for Apache Spark (.jar)
+		- rapids-4-spark_2.12-22.10.0.jar
+		- cudf-0.15-cuda10-1.jar
+		- postgresql-42.5.0.jar
+
 - Data Storage: Amazon AWS: S3, RDS
 	- PostgreSQL: pgAdmin4 6.8 
 
