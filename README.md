@@ -139,3 +139,6 @@ The dashboard blueprint can also be accessed in pdf format from the link below:
 	- Predict is to be : Revenue.
 The model is to be based on a neural network. Peter OneHot Encoded the data, then proceeded with scaling. the function of Choice at the time is "relu" until it is decided it the best for our use case.
 The compile method is Mean Squared Error in a Non Linear Regression type of model.
+
+## Triangle Update 3
+- dropped corrupt data from the AWS RDS, created a new table with proper compatible data types for the final dashboard.
