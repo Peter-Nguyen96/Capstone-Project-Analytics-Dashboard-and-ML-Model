@@ -114,6 +114,11 @@ Based on the data that we received and our initial EDA, we poject the database w
 - Data Storage Service was connected to PostgreSQL database accessed using pgAdmin4
 - Cleaned data was uploaded to database using local installation of PySpark
 
+## Dashboard
+
+Our live dashboard is available here:
+https://public.tableau.com/app/profile/julien4866/viz/StreamingVideoAnalytics/Story?publish=yes
+
 ## Provisional Machine Learning Model
 
 Revenue projections will be made following multiple regression analyses based on the revenue table down to date and country level.
