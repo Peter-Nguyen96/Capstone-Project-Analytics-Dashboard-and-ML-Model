@@ -41,6 +41,7 @@ The client has made the following available to us:
 
 The data has been anonymized to preserve the confidentiality of the client.
 
+
 ## Software & Resources
 
 Python:
@@ -108,26 +109,37 @@ https://docs.google.com/presentation/d/1ZYtJm8cpZripwMaD_qk0EF06C857dtl9DBsFkQhW
 
 Based on the data that we received and our initial EDA, we poject the database will look like the following after data cleaning:
 
-<img src="Initial EDA/Images and Screenshots/ERD v2.png" height=200>
+<img src="Dashboard Demo Charts and Figures/Images and Screenshots/ERD v2.png" height=200>
 
 - Data Storage and Handling was done via Amazon AWS RDS and S3
 - Data Storage Service was connected to PostgreSQL database accessed using pgAdmin4
 - Cleaned data was uploaded to database using local installation of PySpark
+
+
+## Dashboard
+
+Our live dashboard is available here:
+https://public.tableau.com/app/profile/julien4866/viz/StreamingVideoAnalytics/Story?publish=yes
+
 
 ## Provisional Machine Learning Model
 
 Revenue projections will be made following multiple regression analyses based on the revenue table down to date and country level.
 Content recommendations will follow a more advanced machine learning model (tbd)
 
+
 ## TRIANGLE Update #1
 - Dropped the faulty advertsing table due to improper data types.
 - Created a query to properly format the advertising data table, in order to load the csv file into it.
 
+
 ## TRIANGLE Update #2
 - Created a query to merge the advertising data with the merged viewership and mapping data.
 
+
 ## Triangle Update #3
 - dropped corrupt data from the AWS RDS, created a new table with proper compatible data types for the final dashboard.
+
 
 ## Dashboard Blueprint
 
@@ -179,3 +191,5 @@ The revenue table was imported from the database.  The data was grouped by date,
 ## Modelling:
 For this type of model, only the time in days (as an index) and the revenue was required as feature and prediction respectively. During training diagnostic figures were created including Standardized residual for 'r', estimated density, normal Q-Q, and a correlogram were made. The ML model was written to predict and plot the revenue for the remainder of the 2022 calander year as well as provide the predicted mean, lower bound, and upper bound for the revenue for the next 5 days after the last available data point. 
 
+## Square Update
+- link to the published Tableau Story : https://public.tableau.com/app/profile/julien4866/viz/StreamingVideoAnalytics/Story?publish=yes
