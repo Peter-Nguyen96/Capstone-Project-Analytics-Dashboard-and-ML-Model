@@ -179,3 +179,5 @@ The revenue table was imported from the database.  The data was grouped by date,
 ## Modelling:
 For this type of model, only the time in days (as an index) and the revenue was required as feature and prediction respectively. During training diagnostic figures were created including Standardized residual for 'r', estimated density, normal Q-Q, and a correlogram were made. The ML model was written to predict and plot the revenue for the remainder of the 2022 calander year as well as provide the predicted mean, lower bound, and upper bound for the revenue for the next 5 days after the last available data point. 
 
+## Square Update
+- link to the published Tableau Story : https://public.tableau.com/app/profile/julien4866/viz/StreamingVideoAnalytics/Story?publish=yes
