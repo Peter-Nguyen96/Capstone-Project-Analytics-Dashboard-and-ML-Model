@@ -102,7 +102,7 @@ Advertising Data (42,045 rows):
 ## Our Initial Analysis
 
 The results of our initial analysis are available on Google Slides here:
-https://docs.google.com/presentation/d/1ZYtJm8cpZripwMaD_qk0EF06C857dtl9DBsFkQhWB-g/edit?usp=sharing
+https://docs.google.com/presentation/d/1ZYtJm8cpZripwMaD_qk0EF06C857dtl9DBsFkQhWB-g/edit#slide=id.p
 
 
 ## Database
